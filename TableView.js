@@ -230,6 +230,9 @@ cc.Class({
      * @param {Number} offX 
      */
     setBarWgtX : function(offX) {
-        this.wgt.right = offX;
+        let T = this;
+        if (T.wgt) {
+            T.wgt.right = offX;
+        }
     },
 });
